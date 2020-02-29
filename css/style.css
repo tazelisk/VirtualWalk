@@ -51,12 +51,13 @@ alle mit col- bekommen einen float
 
   [class^=col-]{
     float: left;
-    padding: 0 .25em;
+    padding: 0 .5em;
     margin-top: 0;
   }
 
   [class^=col-]:first-child{
     padding-left: 0;
+    padding-right: 5em;
   }
 
   [class^=col-]:last-child{
