@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: 'Oxanium', sans-serif;
   text-align: center;
+  background-color: #1f1f1f;
 }
 
 img{
@@ -104,6 +105,7 @@ h2{
   margin-bottom: 1.5em;
   font-weight: 900;
   margin-top: 1em;
+  color: #f7f7f7;
 }
 
 .title span{
@@ -144,7 +146,7 @@ h2{
 .button-accent {
   color: #ff1493;
   border-color: #ff1493;
-  background-color: #dcdcdc;
+  background-color: rgba(31, 31, 31, 0.85);
 }
 
 .button-accent:hover,
@@ -170,7 +172,7 @@ header{
 
 /* Navigation bar */
 :root {
-  --background: rgba(153, 234, 233, 0.85);
+  --background: rgba(31, 31, 31, 0.85);
 }
 
 *, *::before, *::after {
@@ -265,7 +267,7 @@ nav li{
 }
 
 nav a{
-  color: #696969;
+  color: #999999;
   text-decoration: none;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -335,7 +337,7 @@ nav a:hover{
 /* home-hero
 ====================== */
 .home-hero {
-  background-image: url(../img/wallpaper2.png);
+  background-image: url(../img/wallpaper3.png);
   background-size: cover;
   background-position: center;
   padding: 10em 0;
@@ -358,10 +360,11 @@ nav a:hover{
   padding: 2em;
   margin-left: 0;
   width: 95vw;
-  outline: 3px solid #afeeee	;
+  outline: 3px solid #6495ed	;
   outline-offset: -1em;
   position: relative;
   text-align: center;
+  color: #f7f7f7;
 }
 
 @media (min-width: 25rem){
@@ -400,6 +403,7 @@ nav a:hover{
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  color: #f7f7f7;
 }
 
 .container .box{
@@ -455,7 +459,7 @@ nav a:hover{
 /* cta
 ========================== */
 .cta{
-  background-color: rgba(35, 209, 209, 0.44);
+  background-color: rgba(31, 31, 31, 0.8);
   padding: 5em 0;
 }
 
@@ -465,4 +469,5 @@ nav a:hover{
 footer{
   text-align: left;
   padding: 5em 0;
+  color: #f7f7f7;
 }
