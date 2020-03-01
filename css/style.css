@@ -299,6 +299,7 @@ nav a:hover{
   }
 
   .logo {
+    margin-left: 5em;
     grid-column: 1 / 2;
   }
   nav{
