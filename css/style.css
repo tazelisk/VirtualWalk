@@ -31,6 +31,7 @@ img{
 .container {
   width: 95%;
   margin: 0 auto;
+  color: #1f1f1f:
 }
 
 .clearfix::after,
@@ -358,7 +359,8 @@ nav a:hover{
 
 .home-about-textbox {
   padding: 2em;
-  margin-left: 0;
+  margin-top: 5em;
+  margin-bottom: 5em;
   width: 95vw;
   outline: 3px solid #6495ed	;
   outline-offset: -1em;
@@ -403,7 +405,7 @@ nav a:hover{
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  color: #f7f7f7;
+  color: #1f1f1f;
 }
 
 .container .box{
@@ -414,6 +416,7 @@ nav a:hover{
   margin: 10px;
   box-sizing: border-box;
   display: inline-block;
+  color: #1f1f1f;
 }
 
 .container .box .imgBox{
@@ -453,7 +456,7 @@ nav a:hover{
   margin: 0;
   padding: 0;
   font-size: 20px;
-  color: #ff0;
+  color: #fff;
 }
 
 /* cta
