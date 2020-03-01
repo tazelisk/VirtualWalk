@@ -223,7 +223,7 @@ width: 100%;
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
   display: block;
-  background: black;
+  background: white;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -342,6 +342,7 @@ nav a:hover{
 .home-hero {
   background-image: url(../img/wallpaper3.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 10em 0;
   margin: -1;
