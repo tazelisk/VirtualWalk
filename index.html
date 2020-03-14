@@ -11,8 +11,22 @@
 </head>
 
 <body>
-  <div id="linear-gradient">
-</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+<script type="text/javascript">
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop(),
+      dh = $(document).height(),
+      wh = $(window).height();
+      scrollPercent = (scroll / (dh-wh)) *100;
+      $('#progressbar').css('height', scrollPercent + '%');
+    })
+</script>
+
+
+  <!-- Scrollbar -->
+  <div id="progressbar">
+
+  </div>
 
 <!-- NAVBAR MIT JAVA -->
 

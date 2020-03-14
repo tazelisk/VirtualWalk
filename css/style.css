@@ -11,6 +11,19 @@ main {
 	height: 100vh;
 }
 
+/* Farbige Scroll-Bar */
+::-webkit-scrollbar{
+  width: 0;
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #87cefa,#1e90ff, #00bfff)
+}
+
 
 html{
   scroll-behavior: smooth;
