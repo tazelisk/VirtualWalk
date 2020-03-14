@@ -190,10 +190,10 @@ body {
   height: 200vh;
   background-blend-mode: multiply;
   background-size: cover;
-  place-items: center;
+  place-items: left;
 }
 
-/* Navigation bar
+/* Header
 ================================ */
 
 header{
@@ -205,135 +205,107 @@ width: 100%;
 }
 
 
-.nav-toggle{
-  display: none;
-}
 
-.nav-toggle-label{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before{
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after{
-  top: 7px;
-}
-
+/*  Navigation mit Java */
 nav{
-  position: absolute;
-  text-align: center;
-  top: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
   background: var(--background);
-  width: 100%;
-  transform: scale(1,0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
 }
 
-nav ul{
-  margin: 0;
-  padding: 0;
+.logo{
+  color:  #6495ed;
+  letter-spacing: 4px;
+  font-size: 22px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li{
   list-style: none;
 }
 
-nav li{
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 1em;
-  margin-left: 3em;
-}
-
-nav a{
-  color: #999999;
+.nav-links a{
+  color:  #6495ed;
   text-decoration: none;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
-nav a:hover{
-  color: 	#6495ed;
+.burger{
+  display: none;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:  #6495ed;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-.nav-toggle:checked ~ nav a{
-  opacity: 1;
-  transition: opacity 150ms ease-in-out 250ms;
-}
-
-@media screen and (min-width: 1140px){
-  .nav-toggle-label{
-    display: none;
+@media screen and (max-width: 1024px) {
+  .nav-links{
+    width: 60%;
   }
-  header{
-    display: grid;
-    grid-template-columns: 1fr auto minmax(auto, 1fr);
-  }
+}
 
-  .logo {
-    margin-left: 5em;
-    grid-column: 1 / 2;
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
   }
-  nav{
-    all: unset;
-    grid-column: 2 / 3;
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: 	#696969;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
+    width: 35%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
-
-  nav ul{
-    display: inline;
-    justify-content: inline-end;
+  .nav-links li{
+    opacity: 0;
   }
-
-  nav li{
-    margin-left: 1em;
-    margin-bottom: 0;
-    list-style: none;
-
+  .burger{
+    display: block;
+    cursor: pointer;
   }
-
-  nav a{
-    opacity: 1;
-    position: relative;
-  }
-
 }
 
-@media (min-width: 55rem){
-  .logo{
-    float: center;
-  }
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(+45deg) translate(-5px,-6px);
 }
 
 
@@ -351,6 +323,7 @@ nav a:hover{
 @media(min-width: 60rem){
   .home-hero{
     height: 100vh;
+    width: auto;
     padding-top: 20vh;
   }
 }
@@ -365,7 +338,7 @@ nav a:hover{
   margin-top: 5em;
   margin-bottom: 5em;
   width: 95vw;
-  outline: 3px solid #6495ed	;
+  outline: 3px solid #6495ed;
   outline-offset: -1em;
   position: relative;
   text-align: center;

@@ -12,22 +12,33 @@
 
 <body>
 
-<!-- Navigation bar -->
-<header>
-    <img src="https://i.imgur.com/YEsftbG.png" width="120" height="120"alt="Logo VirtualWalk" class="logo">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#over">Overview</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#">Research</a></li>
+<!-- NAVBAR MIT JAVA -->
+
+<nav>
+  <div class="logo">
+    <h4>VirtualWalk</h4>
+  </div>
+  <ul class="nav-links">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#over">Overview</a>
+      </li>
+      <li>
+        <a href="#team">Team</a>
+      </li>
+      <li>
+        <a href="#">Research</a>
+      </li>
     </ul>
-  </nav>
-  <label for="nav-toggle" class="nav-toggle-label">
-  <span></span>
-</label>
-</header>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+</nav>
+
 
 
 <!-- Text over button -->
@@ -45,7 +56,8 @@
 
 <!-- YOUTUBE VIDEO -->
 <div class="iframe-container">
-  <iframe src="https://www.youtube.com/embed/ItOusdc_OYk?vq=hd1080&modestbranding=1&rel=0" width="560" height="315" frameborder="0"></iframe>
+  <iframe src="https://www.youtube.com/embed/ItOusdc_OYk?vq=hd1080&modestbranding=1&rel=0"
+  width="560" height="315" frameborder="0"></iframe>
 </div>
 
 <!-- Overview, Erklärung -->
@@ -181,6 +193,10 @@ FOOTER
       </div>
     </div>
 </footer>
+
+<!-- Javascript App für die Navigationbar -->
+<script src="nav_app.js">
+  </script>
 
 
   </body>
