@@ -1,5 +1,7 @@
 <!doctype html>
 <html>
+<!-- Library für den Page-to-top Button -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -214,6 +216,20 @@ FOOTER
 <script src="nav_app.js">
   </script>
 
+<!-- Page to top Button -->
+<button id="btnScrollToTop">
+<i class="material-icons">
+vertical_align_top
+</i>
+</button>
+
+<script>
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function (){
+    window.scrollTo(0, 0);
+})
+</script>
 
   </body>
   </html>
