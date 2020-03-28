@@ -354,7 +354,7 @@ nav{
 .home-about-textbox {
   padding: 2em;
   margin-top: 5em;
-  margin-bottom: 20em;
+  margin-bottom: 10em;
   width: 95vw;
   outline: 3px solid #6495ed;
   outline-offset: -1em;
@@ -367,6 +367,14 @@ nav{
   h1 {
     font-size: 2rem;
   }
+}
+
+/* wheelchair svg */
+.wheelchair{
+
+  width: 35%;
+  height: auto;
+  margin-bottom: 10em;
 }
 
 /* YOUTUBE iframe
